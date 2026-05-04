@@ -8,7 +8,7 @@ const app = express()
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-mongoose.connect("mongodb://localhost:27017/test-db").then(()=>{
+mongoose.connect("mongodb+srv://brightfutureacadseason3_db_user:kEwLvQuFpehkB2AN@cluster0.zy9u1zm.mongodb.net/?appName=Cluster0").then(()=>{
     console.log("mongodb connected")
 }).catch(err => console.log("connection error", err))
 
